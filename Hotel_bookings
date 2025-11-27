@@ -1,0 +1,3 @@
+import pandas as pd
+bookings = pd.read_csv(path_to_file, sep = ';')
+bookings_head = bookings.head(7)

@@ -1,3 +1,60 @@
 import pandas as pd
 bookings = pd.read_csv(path_to_file, sep = ';')
 bookings_head = bookings.head(7)
+print(bookings)
+
+               Hotel  Is Canceled  Lead Time arrival full date  \
+0       Resort Hotel            0        342        2015-07-01   
+1       Resort Hotel            0        737        2015-07-01   
+2       Resort Hotel            0          7        2015-07-01   
+3       Resort Hotel            0         13        2015-07-01   
+4       Resort Hotel            0         14        2015-07-01   
+...              ...          ...        ...               ...   
+119385    City Hotel            0         23        2017-08-30   
+119386    City Hotel            0        102        2017-08-31   
+119387    City Hotel            0         34        2017-08-31   
+119388    City Hotel            0        109        2017-08-31   
+119389    City Hotel            0        205        2017-08-29   
+
+        Arrival Date Year Arrival Date Month  Arrival Date Week Number  \
+0                    2015               July                        27   
+1                    2015               July                        27   
+2                    2015               July                        27   
+3                    2015               July                        27   
+4                    2015               July                        27   
+...                   ...                ...                       ...   
+119385               2017             August                        35   
+119386               2017             August                        35   
+119387               2017             August                        35   
+119388               2017             August                        35   
+119389               2017             August                        35   
+...
+119388              2017-09-07  
+119389              2017-09-07  
+
+[119390 rows x 21 columns]
+
+bookings.dtypes
+
+Hotel                         object
+Is Canceled                    int64
+Lead Time                      int64
+arrival full date             object
+Arrival Date Year              int64
+Arrival Date Month            object
+Arrival Date Week Number       int64
+Arrival Date Day of Month      int64
+Stays in Weekend nights        int64
+Stays in week nights           int64
+stays total nights             int64
+Adults                         int64
+Children                     float64
+Babies                         int64
+Meal                          object
+Country                       object
+Reserved Room Type            object
+Assigned room type            object
+customer type                 object
+Reservation Status            object
+Reservation status_date       object
+dtype: object
